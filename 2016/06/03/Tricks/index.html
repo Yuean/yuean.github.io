@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>其他技巧 | ○</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="其他技巧摘自LeetCode和《剑指Offer》还有《程序员面试指南》之类的。
+比特操作除以2：右移一位
+乘以2：左移一位
+判断奇偶：和0x1相与
+2进制中1的个数解法一：用flag=1逐位与目标相与然后左移，直到flag=0（实际上是超出了32位所以变为0了）
+解法二：把一个整数减一再和自己相与就会将最右边一个1变成0，n=(n-1)&amp;amp;n 循环结束条件，n变为0.
+判断溢出0xFFFFF">
+<meta property="og:type" content="article">
+<meta property="og:title" content="其他技巧">
+<meta property="og:url" content="http://yoursite.com/2016/06/03/Tricks/index.html">
+<meta property="og:site_name" content="○">
+<meta property="og:description" content="其他技巧摘自LeetCode和《剑指Offer》还有《程序员面试指南》之类的。
+比特操作除以2：右移一位
+乘以2：左移一位
+判断奇偶：和0x1相与
+2进制中1的个数解法一：用flag=1逐位与目标相与然后左移，直到flag=0（实际上是超出了32位所以变为0了）
+解法二：把一个整数减一再和自己相与就会将最右边一个1变成0，n=(n-1)&amp;amp;n 循环结束条件，n变为0.
+判断溢出0xFFFFF">
+<meta property="og:updated_time" content="2016-06-02T18:09:01.152Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="其他技巧">
+<meta name="twitter:description" content="其他技巧摘自LeetCode和《剑指Offer》还有《程序员面试指南》之类的。
+比特操作除以2：右移一位
+乘以2：左移一位
+判断奇偶：和0x1相与
+2进制中1的个数解法一：用flag=1逐位与目标相与然后左移，直到flag=0（实际上是超出了32位所以变为0了）
+解法二：把一个整数减一再和自己相与就会将最右边一个1变成0，n=(n-1)&amp;amp;n 循环结束条件，n变为0.
+判断溢出0xFFFFF">
+  
+    <link rel="alternate" href="/atom.xml" title="○" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">○</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Tricks" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/06/03/Tricks/" class="article-date">
+  <time datetime="2016-06-02T17:41:56.000Z" itemprop="datePublished">2016-06-03</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Coding/">Coding</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      其他技巧
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="其他技巧"><a href="#其他技巧" class="headerlink" title="其他技巧"></a>其他技巧</h1><p>摘自LeetCode和《剑指Offer》还有《程序员面试指南》之类的。</p>
+<h3 id="比特操作"><a href="#比特操作" class="headerlink" title="比特操作"></a>比特操作</h3><p>除以2：右移一位</p>
+<p>乘以2：左移一位</p>
+<p>判断奇偶：和0x1相与</p>
+<h3 id="2进制中1的个数"><a href="#2进制中1的个数" class="headerlink" title="2进制中1的个数"></a>2进制中1的个数</h3><p>解法一：用flag=1逐位与目标相与然后左移，直到flag=0（实际上是超出了32位所以变为0了）</p>
+<p>解法二：把一个整数减一再和自己相与就会将最右边一个1变成0，n=(n-1)&amp;n 循环结束条件，n变为0.</p>
+<h3 id="判断溢出"><a href="#判断溢出" class="headerlink" title="判断溢出"></a>判断溢出</h3><p>0xFFFFFFFF</p>
+<p>乘法检查溢出。乘完是否比乘之前的结果小</p>
+<h3 id="交换两个元素"><a href="#交换两个元素" class="headerlink" title="交换两个元素"></a>交换两个元素</h3><p>方法一：</p>
+<pre><code>int a=1, b=2;
+a=b-a; //a=1;b=2
+b=b-a; //a=1;b=1
+a=b+a; //a=2;b=1
+</code></pre><p>方法二：</p>
+<pre><code>int a=1, b=2;
+a=a^b:
+a=a^b:
+a=a^b:
+</code></pre><p>方法三：<br>使用堆栈</p>
+<h3 id="不用加减乘除做加法"><a href="#不用加减乘除做加法" class="headerlink" title="不用加减乘除做加法"></a>不用加减乘除做加法</h3><pre><code>s = a^b;
+c = (a&amp;b)&lt;&lt;1;
+a = s;
+b = c;
+</code></pre><h3 id="求1-2-……-n。不能用乘除法、循环和挑几件判断语句。"><a href="#求1-2-……-n。不能用乘除法、循环和挑几件判断语句。" class="headerlink" title="求1+2+……+n。不能用乘除法、循环和挑几件判断语句。"></a>求1+2+……+n。不能用乘除法、循环和挑几件判断语句。</h3><p>解法一：用构造函数 搭配静态成员变量</p>
+<p>解法二：用虚函数。Class A和Class B，B继承A。根据n的值来选择用A还是用B</p>
+<p>解法三：用函数指针</p>
+<p>解法四：利用模板类型</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/06/03/Tricks/" data-id="cioym8w710000ngi077gwlvpi" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/06/03/String/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">字符串类题目</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Coding/">Coding</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/06/03/Tricks/">其他技巧</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/03/String/">字符串类题目</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/03/Array/">数组类题目</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/02/Linklist/">链表类题目</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/31/Begining/">原初之物</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 Yuan<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

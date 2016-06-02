@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>数组类题目 | ○</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="数组类题目摘自LeetCode和《剑指Offer》还有《程序员面试指南》之类的。
+二维数组中的查找：前提：有序。
+以左下角或者右上角为基准查找
+数组中只出现一次的数字用异或
+数组中只出现一次的两个数字先异或一次，然后根据异或的结果，以第一个为1的位置来将原数组划分
+数组中出现超过一半的数字解法一:partition算法 判断是不是数组中间 
+解法二:相同+1 不同-1 记录次数不为0的数
+注意：p">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数组类题目">
+<meta property="og:url" content="http://yoursite.com/2016/06/03/Array/index.html">
+<meta property="og:site_name" content="○">
+<meta property="og:description" content="数组类题目摘自LeetCode和《剑指Offer》还有《程序员面试指南》之类的。
+二维数组中的查找：前提：有序。
+以左下角或者右上角为基准查找
+数组中只出现一次的数字用异或
+数组中只出现一次的两个数字先异或一次，然后根据异或的结果，以第一个为1的位置来将原数组划分
+数组中出现超过一半的数字解法一:partition算法 判断是不是数组中间 
+解法二:相同+1 不同-1 记录次数不为0的数
+注意：p">
+<meta property="og:updated_time" content="2016-06-02T18:08:52.480Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="数组类题目">
+<meta name="twitter:description" content="数组类题目摘自LeetCode和《剑指Offer》还有《程序员面试指南》之类的。
+二维数组中的查找：前提：有序。
+以左下角或者右上角为基准查找
+数组中只出现一次的数字用异或
+数组中只出现一次的两个数字先异或一次，然后根据异或的结果，以第一个为1的位置来将原数组划分
+数组中出现超过一半的数字解法一:partition算法 判断是不是数组中间 
+解法二:相同+1 不同-1 记录次数不为0的数
+注意：p">
+  
+    <link rel="alternate" href="/atom.xml" title="○" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">○</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Array" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/06/03/Array/" class="article-date">
+  <time datetime="2016-06-02T17:40:47.000Z" itemprop="datePublished">2016-06-03</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Coding/">Coding</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      数组类题目
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="数组类题目"><a href="#数组类题目" class="headerlink" title="数组类题目"></a>数组类题目</h1><p>摘自LeetCode和《剑指Offer》还有《程序员面试指南》之类的。</p>
+<h3 id="二维数组中的查找："><a href="#二维数组中的查找：" class="headerlink" title="二维数组中的查找："></a>二维数组中的查找：</h3><p>前提：有序。</p>
+<p>以左下角或者右上角为基准查找</p>
+<h3 id="数组中只出现一次的数字"><a href="#数组中只出现一次的数字" class="headerlink" title="数组中只出现一次的数字"></a>数组中只出现一次的数字</h3><p>用异或</p>
+<h3 id="数组中只出现一次的两个数字"><a href="#数组中只出现一次的两个数字" class="headerlink" title="数组中只出现一次的两个数字"></a>数组中只出现一次的两个数字</h3><p>先异或一次，然后根据异或的结果，以第一个为1的位置来将原数组划分</p>
+<h3 id="数组中出现超过一半的数字"><a href="#数组中出现超过一半的数字" class="headerlink" title="数组中出现超过一半的数字"></a>数组中出现超过一半的数字</h3><p>解法一:partition算法 判断是不是数组中间 </p>
+<p>解法二:相同+1 不同-1 记录次数不为0的数</p>
+<p>注意：partition解法需要修改数组！</p>
+<h3 id="数组中找出任意一个重复的数字，数字范围在0-n-1之间"><a href="#数组中找出任意一个重复的数字，数字范围在0-n-1之间" class="headerlink" title="数组中找出任意一个重复的数字，数字范围在0~n-1之间"></a>数组中找出任意一个重复的数字，数字范围在0~n-1之间</h3><p>重排数组，从第一个数字开始，检查这个数字是否等于i，如果是就扫描下一个数字，如果不是，将其和第m个数字相比较，如果相等，找到重复的，如果不相等，与第m位交换。</p>
+<h3 id="最小的k个数"><a href="#最小的k个数" class="headerlink" title="最小的k个数"></a>最小的k个数</h3><p>解法一 同上<br>解法二 用容器 最小堆 set multiset</p>
+<h3 id="上台阶，一次可以上1级或者2级"><a href="#上台阶，一次可以上1级或者2级" class="headerlink" title="上台阶，一次可以上1级或者2级"></a>上台阶，一次可以上1级或者2级</h3><p>动态规划<br>f(n) = f(n-1)+f(n-2)</p>
+<h3 id="子数组的最大和"><a href="#子数组的最大和" class="headerlink" title="子数组的最大和"></a>子数组的最大和</h3><p>动态规划法</p>
+<p>fi = pData[i] i=0, fi-1&lt;=0</p>
+<p>fi = fi-1 + pData[i] fi-1&gt;0</p>
+<h3 id="旋转数组中的最小数字"><a href="#旋转数组中的最小数字" class="headerlink" title="旋转数组中的最小数字"></a>旋转数组中的最小数字</h3><p>二分法，双指针。第一个指针指向头，第二个指针指向末尾。如果两个指针的值和中间的值相同，则用顺序查找。</p>
+<h3 id="斐波那契矩阵快速幂求"><a href="#斐波那契矩阵快速幂求" class="headerlink" title="斐波那契矩阵快速幂求"></a>斐波那契矩阵快速幂求</h3><p>a^n = a^(n/2)·a^(n/2) 偶数 </p>
+<p>a^(n-1/2)·a^(n-1/2)·a 奇数</p>
+<h3 id="数值的整数次方"><a href="#数值的整数次方" class="headerlink" title="数值的整数次方"></a>数值的整数次方</h3><p>也可以使用上述公式，使用递归。</p>
+<h3 id="调整数组使奇数位于偶数前，负数放在非负数前，被整除和不被整除"><a href="#调整数组使奇数位于偶数前，负数放在非负数前，被整除和不被整除" class="headerlink" title="调整数组使奇数位于偶数前，负数放在非负数前，被整除和不被整除"></a>调整数组使奇数位于偶数前，负数放在非负数前，被整除和不被整除</h3><p>双指针法。p1遇到偶数停，p2遇到奇数则交换。考虑可扩展性，利用函数 参数为bool(*func)(int)</p>
+<h3 id="顺时针打印矩阵"><a href="#顺时针打印矩阵" class="headerlink" title="顺时针打印矩阵"></a>顺时针打印矩阵</h3><p>注意判断条件。从左到右打印一行，从上到下。从右到左，从下到上。<br>结束的条件column&gt;startX<em>2 &amp;&amp; row&gt;startY</em>2</p>
+<p>###　输入含8个数字的数组，是否能把8个数字分别放在正方体的8个定点上，是的正方体上三组相对的面上4个顶点的和相等<br>排列，然后判断a1+a2+a3+a4==a5+a6+a7+a8,a1+a3+a5+a7==a2+a4+a6+a8,a1+a2+a5+a6==a3+a4+a7+a8     </p>
+<h3 id="从1到n中1出现的次数"><a href="#从1到n中1出现的次数" class="headerlink" title="从1到n中1出现的次数"></a>从1到n中1出现的次数</h3><p>直观解法：求余判断是否为1</p>
+<h3 id="把数组排成最小的数"><a href="#把数组排成最小的数" class="headerlink" title="把数组排成最小的数"></a>把数组排成最小的数</h3><p>改变比较函数的定义，如果nm&lt;mn，则n&lt;m。注意是大数问题，转换成字符串来做。用qsort来排序。</p>
+<h3 id="丑数"><a href="#丑数" class="headerlink" title="丑数"></a>丑数</h3><p>丑数是另一个丑数乘以2,3,5的结果，用数组来保存。假设已有的最大丑数为M，先将前面每一个乘以2。将第一个大于M的结果记为M2，同理到M3和M5.当前最大丑数T2T3T5每次取3个数中最小的一个，index+1，知道index到达目标值。</p>
+<h3 id="数组中的逆序对"><a href="#数组中的逆序对" class="headerlink" title="数组中的逆序对"></a>数组中的逆序对</h3><p>分治合拼。合拼的时候统计逆序对的数目。先统计内部的逆序对数，再统计相邻子数组的数目。统计完要把子数组排序。两个指针指向两个子数组的末尾。如果第一个子数组中的数字大于第二个子数组中的数字，逆序对的数目等于第二个子数组中剩余数字的个数。。比较完后，把较大的数字从后往前复制到辅助数组中。</p>
+<h3 id="数字在排序数组中出现的次数"><a href="#数字在排序数组中出现的次数" class="headerlink" title="数字在排序数组中出现的次数"></a>数字在排序数组中出现的次数</h3><p>GetFirstK，GetLastK，都用二分法</p>
+<h3 id="和为S的两个数字"><a href="#和为S的两个数字" class="headerlink" title="和为S的两个数字"></a>和为S的两个数字</h3><p>双指针法，p1指向第一个，p2指向最后一个。和大于目标，p2前移1位，小于，则p1后移1位</p>
+<h3 id="和为S的连续整数序列"><a href="#和为S的连续整数序列" class="headerlink" title="和为S的连续整数序列"></a>和为S的连续整数序列</h3><p>small初始化为1，big初始化为2。增加big，直到大于等于目标，等于则的话，增加big，大于的话，增加small</p>
+<h3 id="构建乘积数组，不能用除法"><a href="#构建乘积数组，不能用除法" class="headerlink" title="构建乘积数组，不能用除法"></a>构建乘积数组，不能用除法</h3><p>给定A[0,1,….,n-1]，构建B，B[i]=A[0]A[1]…A[n-1]</p>
+<p>如果可以用除法，用公式求A1…AN再除以Aj</p>
+<p>把B[i]看成是A[0]…A[i-1]和A[i+1]…A[n-1]两部分的乘积，使用矩阵来计算</p>
+<p>C[i] = A[0]…A[i-1] D[i] = A[i+1]…A[n-1]<br>C可以自上而下地求，D可以自下而上来求<br>时间复杂度O(n)</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/06/03/Array/" data-id="cioym3vg80000gsi0713vezed" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/06/03/String/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          字符串类题目
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/06/02/Linklist/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">链表类题目</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Coding/">Coding</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/06/03/Tricks/">其他技巧</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/03/String/">字符串类题目</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/03/Array/">数组类题目</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/02/Linklist/">链表类题目</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/31/Begining/">原初之物</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 Yuan<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
