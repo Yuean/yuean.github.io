@@ -64,6 +64,45 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Preamble" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/06/03/Preamble/" class="article-date">
+  <time datetime="2016-06-03T06:14:43.000Z" itemprop="datePublished">2016-06-03</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/03/Preamble/">Coding篇序言</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>非ACMer，又想找个OJ练手，LeetCode什么的还是不错的选择呢。想了想贴代码什么的还是算了，记录一下自己做题时候的思路就好了，这样有利于控制篇幅，自己回顾的时候看着也方便。</p>
+<p>可能会涉及《剑指offer》和“程序员面试指南”之类的内容。这些书还是推荐大家去看看的，虽然有些内容至今我仍看不明白╮(╯▽╰)╭。黑书，竞赛书什么的还是放过我吧，以后有空再折腾<em>(:з」∠)</em></p>
+<p>唔，废话少说，开更！目前打算先更链表类，数组类，字符串类的题目，也只能更这些了，只做了这些题目啊。其他的以后再说啦。hhh</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/06/03/Preamble/" data-id="ciozdb9mr0001c0i0mu01okuo" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-Tricks" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/06/03/Tricks/" class="article-date">
@@ -121,7 +160,7 @@ b = c;
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/03/Tricks/" data-id="ciozbgf750004fwi0186irxu2" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/03/Tricks/" data-id="ciozdb9nm0006c0i08cxei7vr" class="article-share-link">Share</a>
       
       
     </footer>
@@ -161,7 +200,7 @@ b = c;
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/03/String/" data-id="ciozbgf750003fwi0zd23lus8" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/03/String/" data-id="ciozdb9n60005c0i0mlmh8ott" class="article-share-link">Share</a>
       
       
     </footer>
@@ -201,7 +240,7 @@ b = c;
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/03/Array/" data-id="ciozbgf6p0001fwi0f7rfi4wr" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/03/Array/" data-id="ciozdb9mr0000c0i0bozmrszj" class="article-share-link">Share</a>
       
       
     </footer>
@@ -229,7 +268,7 @@ b = c;
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/02/Linklist/">链表类题目</a>
+      <a class="article-title" href="/2016/06/02/Linklist/">LeetCode 链表类题目</a>
     </h1>
   
 
@@ -237,11 +276,17 @@ b = c;
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h3 id="No-2-Add-Two-Numbers"><a href="#No-2-Add-Two-Numbers" class="headerlink" title="No.2 Add Two Numbers"></a>No.2 <a href="https://leetcode.com/problems/add-two-numbers/" target="_blank" rel="external">Add Two Numbers</a></h3><p>这题目一开始看错题意了。实际上就是两个数相加，这两个数是用链表表示的，比如342就是2-&gt;4-&gt;3。所以只需要在遍历的时候将两数相加，记录的进位插在链表后面，直到两条链表都遍历完毕就好了。</p>
+<h3 id="No-19-Remove-Nth-Node-From-End-of-List"><a href="#No-19-Remove-Nth-Node-From-End-of-List" class="headerlink" title="No.19 Remove Nth Node From End of List"></a>No.19 <a href="https://leetcode.com/problems/remove-nth-node-from-end-of-list/" target="_blank" rel="external">Remove Nth Node From End of List</a></h3><p> 直观的解法：遍历一次链表获取链表的长度N，然后从头开始遍历到N-n的位置，然后删掉那个结点。</p>
+<p> 只遍历一次的解法：遍历的时候用堆栈保存节点，遍历完后在堆栈直接获取目标节点进行操作。或者直接用递归。</p>
+<h3 id="No-21-Merge-Two-Sorted-Lists"><a href="#No-21-Merge-Two-Sorted-Lists" class="headerlink" title="No.21 Merge Two Sorted Lists"></a>No.21 <a href="https://leetcode.com/problems/merge-two-sorted-lists/" target="_blank" rel="external">Merge Two Sorted Lists</a></h3><p>反正两条链分别遍历，哪个节点大一些就排在前边作为父节点。《剑指offer》也有提到，用的是递归。</p>
+<h3 id="Reverse-a-linked-list-from-position-m-to-n-Do-it-in-place-and-in-one-pass"><a href="#Reverse-a-linked-list-from-position-m-to-n-Do-it-in-place-and-in-one-pass" class="headerlink" title="Reverse a linked list from position m to n. Do it in-place and in one-pass."></a>Reverse a linked list from position m to n. Do it in-place and in one-pass.</h3><p>使用pPrev指向m-1的节点就可以了</p>
+<p>回来继续更。</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/02/Linklist/" data-id="ciozbgf6p0000fwi07h7o8puz" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/02/Linklist/" data-id="ciozdb9n60004c0i0feb5izua" class="article-share-link">Share</a>
       
       
     </footer>
@@ -283,7 +328,7 @@ b = c;
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/05/31/Begining/" data-id="ciozbgf750005fwi0yh5p1i6s" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/05/31/Begining/" data-id="ciozdb9n60003c0i00iei3joy" class="article-share-link">Share</a>
       
       
     </footer>
@@ -330,6 +375,10 @@ b = c;
       <ul>
         
           <li>
+            <a href="/2016/06/03/Preamble/">Coding篇序言</a>
+          </li>
+        
+          <li>
             <a href="/2016/06/03/Tricks/">其他技巧</a>
           </li>
         
@@ -342,11 +391,7 @@ b = c;
           </li>
         
           <li>
-            <a href="/2016/06/02/Linklist/">链表类题目</a>
-          </li>
-        
-          <li>
-            <a href="/2016/05/31/Begining/">原初之物</a>
+            <a href="/2016/06/02/Linklist/">LeetCode 链表类题目</a>
           </li>
         
       </ul>
