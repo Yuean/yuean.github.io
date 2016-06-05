@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
   
   <title>LeetCode 链表类题目 | ○</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="No.2 Add Two Numbers这题目一开始看错题意了。实际上就是两个数相加，这两个数是用链表表示的，比如342就是2-&amp;gt;4-&amp;gt;3。所以只需要在遍历的时候将两数相加，记录的进位插在链表后面，直到两条链表都遍历完毕就好了。
-No.19 Remove Nth Node From End of List 直观的解法：遍历一次链表获取链表的长度N，然后从头开始遍历到N-n的位置，然后删">
+No.19 Remove Nth Node From End of List直观的解法：遍历一次链表获取链表的长度N，然后从头开始遍历到N-n的位置，然后删掉">
 <meta property="og:type" content="article">
 <meta property="og:title" content="LeetCode 链表类题目">
 <meta property="og:url" content="http://yoursite.com/2016/06/02/Linklist/index.html">
 <meta property="og:site_name" content="○">
 <meta property="og:description" content="No.2 Add Two Numbers这题目一开始看错题意了。实际上就是两个数相加，这两个数是用链表表示的，比如342就是2-&amp;gt;4-&amp;gt;3。所以只需要在遍历的时候将两数相加，记录的进位插在链表后面，直到两条链表都遍历完毕就好了。
-No.19 Remove Nth Node From End of List 直观的解法：遍历一次链表获取链表的长度N，然后从头开始遍历到N-n的位置，然后删">
-<meta property="og:updated_time" content="2016-06-03T06:46:26.855Z">
+No.19 Remove Nth Node From End of List直观的解法：遍历一次链表获取链表的长度N，然后从头开始遍历到N-n的位置，然后删掉">
+<meta property="og:updated_time" content="2016-06-05T18:30:28.981Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="LeetCode 链表类题目">
 <meta name="twitter:description" content="No.2 Add Two Numbers这题目一开始看错题意了。实际上就是两个数相加，这两个数是用链表表示的，比如342就是2-&amp;gt;4-&amp;gt;3。所以只需要在遍历的时候将两数相加，记录的进位插在链表后面，直到两条链表都遍历完毕就好了。
-No.19 Remove Nth Node From End of List 直观的解法：遍历一次链表获取链表的长度N，然后从头开始遍历到N-n的位置，然后删">
+No.19 Remove Nth Node From End of List直观的解法：遍历一次链表获取链表的长度N，然后从头开始遍历到N-n的位置，然后删掉">
   
     <link rel="alternate" href="/atom.xml" title="○" type="application/atom+xml">
   
@@ -27,13 +27,13 @@ No.19 Remove Nth Node From End of List 直观的解法：遍历一次链表获�
   
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 </head>
 
 <body>
-  <div id="container">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div id="container">
     <div id="wrap">
       <header id="header">
   <div id="banner"></div>
@@ -92,19 +92,49 @@ No.19 Remove Nth Node From End of List 直观的解法：遍历一次链表获�
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="No-2-Add-Two-Numbers"><a href="#No-2-Add-Two-Numbers" class="headerlink" title="No.2 Add Two Numbers"></a>No.2 <a href="https://leetcode.com/problems/add-two-numbers/" target="_blank" rel="external">Add Two Numbers</a></h3><p>这题目一开始看错题意了。实际上就是两个数相加，这两个数是用链表表示的，比如342就是2-&gt;4-&gt;3。所以只需要在遍历的时候将两数相加，记录的进位插在链表后面，直到两条链表都遍历完毕就好了。</p>
-<h3 id="No-19-Remove-Nth-Node-From-End-of-List"><a href="#No-19-Remove-Nth-Node-From-End-of-List" class="headerlink" title="No.19 Remove Nth Node From End of List"></a>No.19 <a href="https://leetcode.com/problems/remove-nth-node-from-end-of-list/" target="_blank" rel="external">Remove Nth Node From End of List</a></h3><p> 直观的解法：遍历一次链表获取链表的长度N，然后从头开始遍历到N-n的位置，然后删掉那个结点。</p>
-<p> 只遍历一次的解法：遍历的时候用堆栈保存节点，遍历完后在堆栈直接获取目标节点进行操作。或者直接用递归。</p>
+        <h3 id="No-2-Add-Two-Numbers"><a href="#No-2-Add-Two-Numbers" class="headerlink" title="No.2 Add Two Numbers"></a>No.2 <a href="https://leetcode.com/problems/add-two-numbers/" target="_blank" rel="external">Add Two Numbers</a></h3><pre><code>这题目一开始看错题意了。实际上就是两个数相加，这两个数是用链表表示的，比如342就是2-&gt;4-&gt;3。所以只需要在遍历的时候将两数相加，记录的进位插在链表后面，直到两条链表都遍历完毕就好了。
+</code></pre><h3 id="No-19-Remove-Nth-Node-From-End-of-List"><a href="#No-19-Remove-Nth-Node-From-End-of-List" class="headerlink" title="No.19 Remove Nth Node From End of List"></a>No.19 <a href="https://leetcode.com/problems/remove-nth-node-from-end-of-list/" target="_blank" rel="external">Remove Nth Node From End of List</a></h3><p>直观的解法：遍历一次链表获取链表的长度N，然后从头开始遍历到N-n的位置，然后删掉那个结点。</p>
+<p>只遍历一次的解法：遍历的时候用堆栈保存节点，遍历完后在堆栈直接获取目标节点进行操作。或者直接用递归。</p>
 <h3 id="No-21-Merge-Two-Sorted-Lists"><a href="#No-21-Merge-Two-Sorted-Lists" class="headerlink" title="No.21 Merge Two Sorted Lists"></a>No.21 <a href="https://leetcode.com/problems/merge-two-sorted-lists/" target="_blank" rel="external">Merge Two Sorted Lists</a></h3><p>反正两条链分别遍历，哪个节点大一些就排在前边作为父节点。《剑指offer》也有提到，用的是递归。</p>
-<h3 id="Reverse-a-linked-list-from-position-m-to-n-Do-it-in-place-and-in-one-pass"><a href="#Reverse-a-linked-list-from-position-m-to-n-Do-it-in-place-and-in-one-pass" class="headerlink" title="Reverse a linked list from position m to n. Do it in-place and in one-pass."></a>Reverse a linked list from position m to n. Do it in-place and in one-pass.</h3><p>使用pPrev指向m-1的节点就可以了</p>
-<p>回来继续更。</p>
+<h3 id="No-23-Merge-k-Sorted-Lists"><a href="#No-23-Merge-k-Sorted-Lists" class="headerlink" title="No.23 Merge k Sorted Lists"></a>No.23 <a href="https://leetcode.com/problems/merge-k-sorted-lists/" target="_blank" rel="external">Merge k Sorted Lists</a></h3><p>可以沿用原先的合拼两个有序链表的方法，使用递归和二分的方法。</p>
+<p>还可以用堆排序。但每次都要调整堆太不科学了。</p>
+<p>用优先队列就没问题了！先把各链表的头压入优先队列中，然后取出最小的一个，访问其下一个节点，如果有，就压入优先队列中。</p>
+<h3 id="No-24-Swap-Nodes-in-Pairs"><a href="#No-24-Swap-Nodes-in-Pairs" class="headerlink" title="No.24 Swap Nodes in Pairs"></a>No.24 <a href="https://leetcode.com/problems/swap-nodes-in-pairs/" target="_blank" rel="external">Swap Nodes in Pairs</a></h3><p>借助指向前一个节点的指针pPrev</p>
+<h3 id="No-25-Reverse-Nodes-in-k-Group"><a href="#No-25-Reverse-Nodes-in-k-Group" class="headerlink" title="No.25 Reverse Nodes in k-Group"></a>No.25 <a href="https://leetcode.com/problems/reverse-nodes-in-k-group/" target="_blank" rel="external">Reverse Nodes in k-Group</a></h3><p>这题虽然是Hard，其实也不难的。先遍历一次获取链表的长度，这样就知道需要翻转多少次了。至于翻转用之前的方法就可以了。</p>
+<h3 id="No-61-Rotate-List-https-leetcode-com-problems-rotate-list"><a href="#No-61-Rotate-List-https-leetcode-com-problems-rotate-list" class="headerlink" title="No.61 [Rotate List]https://leetcode.com/problems/rotate-list/)"></a>No.61 [Rotate List]<a href="https://leetcode.com/problems/rotate-list/" target="_blank" rel="external">https://leetcode.com/problems/rotate-list/</a>)</h3><p>先遍历一次链表获取链表的长度，根据输入的k，模一下链表的长度得到新的链表头的位置，遍历到新链表头的位置，将其设为新的链表头，将旧链表头接在其末端。</p>
+<h3 id="No-82-Remove-Duplicates-from-Sorted-List-II"><a href="#No-82-Remove-Duplicates-from-Sorted-List-II" class="headerlink" title="No.82 Remove Duplicates from Sorted List II"></a>No.82 <a href="https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/" target="_blank" rel="external">Remove Duplicates from Sorted List II</a></h3><p>借助一个变量needdelnum保存当前节点的值，然后遍历后一个节点是否相同，然相同则删除。注意删除头节点的情况。</p>
+<p>由于题目说明了给定的是一个排好序的链表，所以重复的节点肯定是连续在一起的，就不需要考虑隔着的情况了。</p>
+<h3 id="No-83-Remove-Duplicates-from-Sorted-List"><a href="#No-83-Remove-Duplicates-from-Sorted-List" class="headerlink" title="No.83 Remove Duplicates from Sorted List"></a>No.83 <a href="https://leetcode.com/problems/remove-duplicates-from-sorted-list/" target="_blank" rel="external">Remove Duplicates from Sorted List</a></h3><p>这题跟上一题一样，只是不要求删除自身，也就是多个重复的节点只保留一个。</p>
+<h3 id="No-86-Partition-List"><a href="#No-86-Partition-List" class="headerlink" title="No.86 Partition List"></a>No.86 <a href="https://leetcode.com/problems/partition-list/" target="_blank" rel="external">Partition List</a></h3><p>这题做的时候也是没看题意啊，以为要排序，其实别人没说要排序，遍历的时候，如果有大于x的，就标记一下，这意味着后面出现的小于x的值都得插入在这个值后面。</p>
+<h3 id="No-92-Reverse-Linked-List-II"><a href="#No-92-Reverse-Linked-List-II" class="headerlink" title="No.92 Reverse Linked List II"></a>No.92 <a href="https://leetcode.com/problems/reverse-linked-list-ii/" target="_blank" rel="external">Reverse Linked List II</a></h3><p>使用pPrev指向m-1的节点，然后将n-m作为步数，用头插入的方法翻转中间的部分，接在pPrev后面。</p>
+<h3 id="No-109-Convert-Sorted-List-to-Binary-Search-Tree"><a href="#No-109-Convert-Sorted-List-to-Binary-Search-Tree" class="headerlink" title="No.109 Convert Sorted List to Binary Search Tree"></a>No.109 <a href="https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/" target="_blank" rel="external">Convert Sorted List to Binary Search Tree</a></h3><p>BST的中序遍历就是排好序的链表了。所以问题变为如何根据中序遍历建树。关于树的遍历会单独post一篇来讲。</p>
+<h3 id="No-138-Copy-List-with-Random-Pointer"><a href="#No-138-Copy-List-with-Random-Pointer" class="headerlink" title="No.138 Copy List with Random Pointer"></a>No.138 <a href="https://leetcode.com/problems/copy-list-with-random-pointer/" target="_blank" rel="external">Copy List with Random Pointer</a></h3><p>这种题目《剑指offer》有提到，解法如下：</p>
+<p>第一种方法，分两步。第一步复制所有节点，第二步复制另一个指针的指向</p>
+<p>第二种方法，用哈希表将节点N和节点N的指针指向的节点N’配对，根据N来找指针的指向</p>
+<p>第三种方法，对于每一个节点N，复制一个节点N’在其后，形成新链，如果N的另一个指针指向的是S，则N’的另一个指针指向S的下一个节点S’，最后拆分为两条链，一条是奇数节点，即原链表，第二条是偶数节点的，是复制后的链表</p>
+<h3 id="No-141-Linked-List-Cycle"><a href="#No-141-Linked-List-Cycle" class="headerlink" title="No.141 Linked List Cycle"></a>No.141 <a href="https://leetcode.com/problems/linked-list-cycle/" target="_blank" rel="external">Linked List Cycle</a></h3><p>判断是否有环，用快慢指针法。一个指针每次走一步，另一个指针每次走两步，如果有环，则这两个指针必定会相遇。</p>
+<h3 id="No-142-Linked-List-Cycle-II"><a href="#No-142-Linked-List-Cycle-II" class="headerlink" title="No.142 Linked List Cycle II"></a>No.142 <a href="https://leetcode.com/problems/linked-list-cycle-ii/" target="_blank" rel="external">Linked List Cycle II</a></h3><p>获取环的入口节点。这题《剑指offer》也有提到， 如果环的节点个数已知为n。可以用双指针法，p1先移动n步，然后p1p2一起移动，直到相遇。</p>
+<p>那么，如何获得环的节点个数呢？</p>
+<p>由于快慢指针法一定会在环中相遇。这时开始计数，如果走到原来的节点，就可以知道环的长度了</p>
+<h3 id="No-143-Reorder-List"><a href="#No-143-Reorder-List" class="headerlink" title="No.143 Reorder List"></a>No.143 <a href="https://leetcode.com/problems/reorder-list/" target="_blank" rel="external">Reorder List</a></h3><p>用stack就搞定了！</p>
+<h3 id="No-147-Insertion-Sort-List"><a href="#No-147-Insertion-Sort-List" class="headerlink" title="No.147 Insertion Sort List"></a>No.147 <a href="https://leetcode.com/problems/insertion-sort-list/" target="_blank" rel="external">Insertion Sort List</a></h3><p>用插入排序算法排序链表。知道插入排序就行了吧。</p>
+<h3 id="No-148-Sort-List"><a href="#No-148-Sort-List" class="headerlink" title="No.148 Sort List"></a>No.148 <a href="https://leetcode.com/problems/sort-list/" target="_blank" rel="external">Sort List</a></h3><p>这题要求时间复杂度是$O(n\logn)$且空间复杂度为常数。使用合拼排序即可。</p>
+<h3 id="No-160-Intersection-of-Two-Linked-Lists"><a href="#No-160-Intersection-of-Two-Linked-Lists" class="headerlink" title="No.160 Intersection of Two Linked Lists"></a>No.160 <a href="https://leetcode.com/problems/intersection-of-two-linked-lists/" target="_blank" rel="external">Intersection of Two Linked Lists</a></h3><p>找到两个链表的交点。对两个链表各遍历一次获取其长度M和N，长的先走$|M-N|$步，然后一起走。</p>
+<h3 id="No-203-Remove-Linked-List-Elements"><a href="#No-203-Remove-Linked-List-Elements" class="headerlink" title="No.203 Remove Linked List Elements"></a>No.203 <a href="https://leetcode.com/problems/remove-linked-list-elements/" target="_blank" rel="external">Remove Linked List Elements</a></h3><p>删除指定值的节点。用指针记录前一个的节点就好了。</p>
+<h3 id="No-206-Reverse-Linked-List"><a href="#No-206-Reverse-Linked-List" class="headerlink" title="No.206 Reverse Linked List"></a>No.206 <a href="https://leetcode.com/problems/reverse-linked-list/" target="_blank" rel="external">Reverse Linked List</a></h3><p>翻转链表。可以用递归或者迭代来完成。我倾向用迭代来做的，这样不会爆栈。</p>
+<h3 id="No-234-Palindrome-Linked-List"><a href="#No-234-Palindrome-Linked-List" class="headerlink" title="No.234 Palindrome Linked List"></a>No.234 <a href="https://leetcode.com/problems/palindrome-linked-list/" target="_blank" rel="external">Palindrome Linked List</a></h3><p>判断是否是回文链表。先用快慢指针法走到链表中间。然后据节点个数的奇偶来判断，然后将后半段链表翻转。前半部分和后半部分同时遍历，如果都相同，那就是回文啦！</p>
+<h3 id="No-237-Delete-Node-in-a-Linked-List"><a href="#No-237-Delete-Node-in-a-Linked-List" class="headerlink" title="No.237 Delete Node in a Linked List"></a>No.237 <a href="https://leetcode.com/problems/delete-node-in-a-linked-list/" target="_blank" rel="external">Delete Node in a Linked List</a></h3><p>删除链表中的一个节点，有个特殊条件，只給你要删的那个节点，不给你整条链，也就是说你不能访问前一个节点！怎么办呢？只要复制后面的节点，然后把后面的节点删掉就可以了！</p>
+<h3 id="No-328-Odd-Even-Linked-List"><a href="#No-328-Odd-Even-Linked-List" class="headerlink" title="No.328 Odd Even Linked List"></a>No.328 <a href="https://leetcode.com/problems/odd-even-linked-list/" target="_blank" rel="external">Odd Even Linked List</a></h3><p>这题新出的还没做。</p>
+<p>未完待续。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/02/Linklist/" data-id="ciozdb9n60004c0i0feb5izua" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/02/Linklist/" data-id="cip2xm29f00030wi0gopm1pht" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LinkList/">LinkList</a></li></ul>
+
     </footer>
   </div>
   
@@ -146,9 +176,23 @@ No.19 Remove Nth Node From End of List 直观的解法：遍历一次链表获�
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/LinkList/">LinkList</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/LinkList/" style="font-size: 10px;">LinkList</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
@@ -221,7 +265,23 @@ No.19 Remove Nth Node From End of List 直观的解法：遍历一次链表获�
 
 
 <script src="/js/script.js"></script>
+  </div><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
 
-  </div>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
 </body>
 </html>
