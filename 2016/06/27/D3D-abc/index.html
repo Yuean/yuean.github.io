@@ -15,7 +15,7 @@
 <meta property="og:description" content="向量$\vec u = (u_x,u_y,u_z)$$\vec v = (v_x,v_y,v_z)$
 向量加法$\vec u + \vec v = (u_x+v_x,u_y+v_y,u_z+v_z)$画图的话是从向量u的箭头画一向量指向向量v的箭头
 向量减法$\vec u - \vec v = (u_x-v_x,u_y-v_y,u_z-v_z)$画图的话是从向量v的箭头画一向量指向向量u的箭头，并">
-<meta property="og:updated_time" content="2016-07-21T17:41:12.097Z">
+<meta property="og:updated_time" content="2016-07-21T17:42:48.892Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="D3D ABC">
 <meta name="twitter:description" content="向量$\vec u = (u_x,u_y,u_z)$$\vec v = (v_x,v_y,v_z)$
@@ -109,7 +109,8 @@
 <h2 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h2><h3 id="单位矩阵"><a href="#单位矩阵" class="headerlink" title="单位矩阵"></a>单位矩阵</h3><p>左上右下的对角线元素为1，其他元素为0的矩阵：<br>$<br>\begin{bmatrix}<br>1 &amp; 0 &amp; 0\\<br>0 &amp; 1 &amp; 0\\<br>0 &amp; 0 &amp; 1\\<br>\end{bmatrix}<br>$</p>
 <h3 id="矩阵的加减和数乘"><a href="#矩阵的加减和数乘" class="headerlink" title="矩阵的加减和数乘"></a>矩阵的加减和数乘</h3><p>直接加减和乘进去就行了，加减是对应位置的加减，数乘是所有元素都要乘</p>
 <h3 id="矩阵乘法"><a href="#矩阵乘法" class="headerlink" title="矩阵乘法"></a>矩阵乘法</h3><p>要求前者列数等于后者行数</p>
-<p>$ AB =<br>\begin{bmatrix}<br>a<em>{11} &amp; a</em>{12} &amp; a<em>{13} \\<br>a</em>{21} &amp; a<em>{22} &amp; a</em>{23} \\<br>\end{bmatrix}<br>\begin{bmatrix}<br>b<em>{11} &amp; b</em>{12} \\<br>b<em>{21} &amp; b</em>{22} \\<br>b<em>{31} &amp; b</em>{32} \\<br>\end{bmatrix} = \begin{bmatrix}<br>a<em>{11}b</em>{11}+a<em>{12}b</em>{21}+a<em>{13}b</em>{31} &amp; a<em>{11}b</em>{12}+a<em>{12}b</em>{22}+a<em>{13}b</em>{32} \\<br>a<em>{21}b</em>{11}+a<em>{22}b</em>{21}+a<em>{23}b</em>{31} &amp; a<em>{21}b</em>{12}+a<em>{22}b</em>{22}+a<em>{23}b</em>{32} \\<br>\end{bmatrix} = C $</p>
+<p>$ AB =<br>\begin{bmatrix}<br>a<em>{11} &amp; a</em>{12} &amp; a<em>{13} \\<br>a</em>{21} &amp; a<em>{22} &amp; a</em>{23} \\<br>\end{bmatrix}</p>
+<p>\begin{bmatrix}<br>b<em>{11} &amp; b</em>{12} \\<br>b<em>{21} &amp; b</em>{22} \\<br>b<em>{31} &amp; b</em>{32} \\<br>\end{bmatrix} =<br>\begin{bmatrix}<br>a<em>{11}b</em>{11}+a<em>{12}b</em>{21}+a<em>{13}b</em>{31} &amp; a<em>{11}b</em>{12}+a<em>{12}b</em>{22}+a<em>{13}b</em>{32} \\<br>a<em>{21}b</em>{11}+a<em>{22}b</em>{21}+a<em>{23}b</em>{31} &amp; a<em>{21}b</em>{12}+a<em>{22}b</em>{22}+a<em>{23}b</em>{32} \\<br>\end{bmatrix}<br> = C $</p>
 <h3 id="逆矩阵"><a href="#逆矩阵" class="headerlink" title="逆矩阵"></a>逆矩阵</h3><p>矩阵 × 其逆矩阵 = 单位矩阵</p>
 <h3 id="转置"><a href="#转置" class="headerlink" title="转置"></a>转置</h3><p>行列交换即可，Knuth有快速算法哦！</p>
 <h2 id="基本变换"><a href="#基本变换" class="headerlink" title="基本变换"></a>基本变换</h2><h3 id="平移"><a href="#平移" class="headerlink" title="平移"></a>平移</h3><p>将向量平移，可将其与下列矩阵相乘：<br>$\begin{bmatrix}<br> 1 &amp; 0 &amp; 0 &amp; 0\\<br> 0 &amp; 1 &amp; 0 &amp; 0 \\<br> 0 &amp; 0 &amp; 1 &amp; 0 \\<br> p_x &amp; p_y &amp; p_z &amp; 1 \\<br>\end{bmatrix}$</p>
@@ -121,7 +122,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/27/D3D-abc/" data-id="ciqwltx6g0003g0i0aapte2e6" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/27/D3D-abc/" data-id="ciqwlvz3y0001iwi05cfd2moq" class="article-share-link">Share</a>
       
       
     </footer>
